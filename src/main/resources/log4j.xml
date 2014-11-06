@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true">
+
+  <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d{ABSOLUTE} demo %-5p [%c{1}] (%t) (%F:%L) %m%n"/>
+    </layout>
+  </appender>
+
+  <logger name="org.springframework.jdbc">
+    <level value="OFF"/>
+  </logger>
+
+  <logger name="informatech.demo.controllers">
+    <level value="DEBUG"/>
+  </logger>
+
+  <root>
+    <level value="INFO"/>
+    <appender-ref ref="stdout"/>
+  </root>
+
+</log4j:configuration>
