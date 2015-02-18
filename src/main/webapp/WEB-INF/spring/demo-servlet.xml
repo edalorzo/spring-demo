@@ -15,5 +15,15 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
+    <!--mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+
+        </mvc:interceptor>
+    </mvc:interceptors-->
+
 
 </beans>

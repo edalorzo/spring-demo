@@ -1,24 +1,24 @@
-package informatech.demo.domain;
+package informatech.demo.model;
 
-import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
+import org.hibernate.validator.constraints.NotBlank;
+
 import java.util.List;
 
-@XmlRootElement
-@Entity
-@Table(name = "department")
-public class Department {
+public class DepartmentModel {
 
-    @Id
-    @GeneratedValue
-    @Column(name = "id")
     private Integer id;
 
-    @Column(name = "name")
+    @NotBlank
     private String name;
+    private List<String> employees;
 
-    @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
-    private List<Employee> employees;
+    public DepartmentModel(){
+    }
+
+    public DepartmentModel(Integer id, String name){
+        this.id = id;
+        this.name = name;
+    }
 
     public Integer getId() {
         return id;
@@ -31,21 +31,22 @@ public class Department {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
 
-    public List<Employee> getEmployees() {
+    public List<String> getEmployees() {
         return employees;
     }
 
-    public void setEmployees(List<Employee> employees) {
+    public void setEmployees(List<String> employees) {
         this.employees = employees;
     }
 
     @Override
     public String toString() {
-        return "Department{" +
+        return "DepartmentModel{" +
             "id=" + id +
             ", name='" + name + '\'' +
             '}';
