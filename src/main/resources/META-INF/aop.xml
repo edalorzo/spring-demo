@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<aspectj>
+    <weaver options="-Xset:weaveJavaxPackages=true -showWeaveInfo">
+        <include within="informatech.demo..*"/>
+    </weaver>
+</aspectj>
