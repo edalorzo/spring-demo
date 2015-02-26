@@ -1,4 +1,4 @@
-package informatech.demo.domain;
+package codemasters.demo.domain;
 
 import javax.persistence.*;
 

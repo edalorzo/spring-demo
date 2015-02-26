@@ -1,9 +1,9 @@
-package informatech.demo.controllers;
+package codemasters.demo.controllers;
 
-import informatech.demo.domain.Department;
-import informatech.demo.model.DepartmentModel;
-import informatech.demo.repository.DepartmentRepository;
-import informatech.demo.services.DepartmentService;
+import codemasters.demo.domain.Department;
+import codemasters.demo.model.DepartmentModel;
+import codemasters.demo.repository.DepartmentRepository;
+import codemasters.demo.services.DepartmentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

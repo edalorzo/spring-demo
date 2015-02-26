@@ -12,7 +12,7 @@
     <level value="OFF"/>
   </logger>
 
-  <logger name="informatech.demo.controllers">
+  <logger name="codemasters.demo.controllers">
     <level value="DEBUG"/>
   </logger>
 

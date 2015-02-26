@@ -1,4 +1,4 @@
-package informatech.demo.controllers;
+package codemasters.demo.controllers;
 
 import org.junit.Before;
 import org.junit.Test;

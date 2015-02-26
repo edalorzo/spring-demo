@@ -1,4 +1,4 @@
-package informatech.demo.services;
+package codemasters.demo.services;
 
 public class BadRequestServiceException extends RuntimeException {
 

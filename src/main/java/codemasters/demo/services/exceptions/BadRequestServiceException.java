@@ -1,4 +1,4 @@
-package informatech.demo.services.exceptions;
+package codemasters.demo.services.exceptions;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.FieldError;

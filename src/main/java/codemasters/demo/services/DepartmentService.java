@@ -1,9 +1,9 @@
-package informatech.demo.services;
+package codemasters.demo.services;
 
-import informatech.demo.domain.Department;
-import informatech.demo.domain.Employee;
-import informatech.demo.model.DepartmentModel;
-import informatech.demo.repository.DepartmentRepository;
+import codemasters.demo.domain.Department;
+import codemasters.demo.domain.Employee;
+import codemasters.demo.model.DepartmentModel;
+import codemasters.demo.repository.DepartmentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;

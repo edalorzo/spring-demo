@@ -5,11 +5,11 @@
        xmlns:jpa="http://www.springframework.org/schema/data/jpa"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
-    <context:component-scan base-package="informatech.demo"/>
+    <context:component-scan base-package="codemasters.demo"/>
     <context:load-time-weaver aspectj-weaving="on"/>
     <tx:annotation-driven mode="aspectj"/>
 
-    <jpa:repositories base-package="informatech.demo.repository"/>
+    <jpa:repositories base-package="codemasters.demo.repository"/>
 
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="org.apache.derby.jdbc.ClientDriver"/>
@@ -35,7 +35,7 @@
         <property name="jpaDialect">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaDialect"/>
         </property>
-        <property name="packagesToScan" value="informatech.demo.domain"/>
+        <property name="packagesToScan" value="codemasters.demo.domain"/>
         <property name="persistenceUnitName" value="demo"/>
     </bean>
 

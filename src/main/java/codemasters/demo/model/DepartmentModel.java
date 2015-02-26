@@ -1,4 +1,4 @@
-package informatech.demo.model;
+package codemasters.demo.model;
 
 import java.util.List;
 

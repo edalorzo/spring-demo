@@ -1,8 +1,8 @@
-package informatech.demo.services;
+package codemasters.demo.services.exceptions;
 
 public class ResourceNotFoundException extends RuntimeException {
 
-    public ResourceNotFoundException(String message){
+    public ResourceNotFoundException(String message) {
         super(message);
     }
 

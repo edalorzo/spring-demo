@@ -1,6 +1,6 @@
-package informatech.demo.repository;
+package codemasters.demo.repository;
 
-import informatech.demo.domain.Department;
+import codemasters.demo.domain.Department;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
