@@ -32,7 +32,7 @@ public class DepartmentService {
     }
 
     @Transactional(propagation = Propagation.REQUIRES_NEW)
-    public DepartmentModel createNewDepartment(DepartmentModel model) {
+    private DepartmentModel createNewDepartment(DepartmentModel model) {
         if(Objects.nonNull(model.getId())){
             throw new BadRequestServiceException("A new department must have a null id");
         }
